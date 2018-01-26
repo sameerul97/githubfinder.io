@@ -6,7 +6,7 @@ Tools used:
   Jquery AJAX
   Bootstrap
 <br>
-<a href="https://github.com/sameerul97/githubfinder">See a Demo (Click here)</a>
+<a href="http://githubfinder.sameerul.com">See a Demo (Click here)</a>
       
 To view source:<br>
 Download -> unzip -> run the index.html
