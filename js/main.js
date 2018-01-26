@@ -21,21 +21,21 @@ $(document).ready(function(){
       }).done(function(repos){
         $.each(repos, function(index, repo){
           $('#repos').append(`
-          <div class="card border-primary mb-3" style="border-radius:5px;" >
-            <div class="card-header  border-primary">
-              <strong>${repo.name}</strong>: ${repo.description}
+            <div class="card border-primary mb-3" style="border-radius:5px;" >
+              <div class="card-header  border-primary">
+                Project Name: <strong>${repo.name}</strong>
+              </div>
+              <div class="card-body ">
+                <h5 class="card-title">Description</h5>
+                <p class="card-text">${repo.description}</p>
+              </div>
+              <div class="card-footer bg-transparent border-primary" >
+                  <a href="#" class="badge badge-pill badge-primary">Forks: ${repo.forks_count}</a>
+                  <a href="#" class="badge badge-pill badge-primary">Watchers: ${repo.watchers_count}</a>
+                  <a href="#" class="badge badge-pill badge-primary">Stars: ${repo.stargazers_count}</a>
+                  <a href="${repo.html_url}" class="text-right btn btn-success" style="float:right;">Go to repo</a>
+              </div>
             </div>
-            <div class="card-body ">
-              <h5 class="card-title">Success card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            </div>
-            <div class="card-footer bg-transparent border-primary" >
-                <a href="#" class="badge badge-pill badge-primary">Forks: ${repo.forks_count}</a>
-                <a href="#" class="badge badge-pill badge-primary">Watchers: ${repo.watchers_count}</a>
-                <a href="#" class="badge badge-pill badge-primary">Stars: ${repo.stargazers_count}</a>
-                <a href="${repo.html_url}" class="text-right btn btn-success" style="float:right;">Go to repo</a>
-            </div>
-          </div>
           `);
         });
       });
