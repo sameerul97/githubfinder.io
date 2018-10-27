@@ -1,7 +1,7 @@
 # Github Finder
 
 Simple application consuming REST API provided by Github to find Github users and thier repos. App was created using Jquery and Ajax
-
+Hosted on private server in my home. Link below.
 Tools used: 
   Jquery AJAX
   Bootstrap
